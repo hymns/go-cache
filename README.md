@@ -1,6 +1,6 @@
 # go-cache
 
-[![Go Version](https://img.shields.io/badge/go-1.24.0-blue.svg)](https://golang.org/dl/) [![Go Report Card](https://goreportcard.com/badge/github.com/hymns/go-cache)](https://goreportcard.com/report/github.com/hymns/go-cache) [![GoDoc](https://godoc.org/github.com/hymns/go-cache?status.svg)](https://pkg.go.dev/github.com/hymns/go-cache) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/hymns/go-cache)](https://github.com/hymns/go-cache/releases) [![Go Version](https://img.shields.io/badge/go-1.24.0-blue.svg)](https://golang.org/dl/) [![Go Report Card](https://goreportcard.com/badge/github.com/hymns/go-cache)](https://goreportcard.com/report/github.com/hymns/go-cache) [![GoDoc](https://godoc.org/github.com/hymns/go-cache?status.svg)](https://pkg.go.dev/github.com/hymns/go-cache) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A Laravel-inspired caching library for Go with support for multiple backends, cache tags, and built-in stampede prevention.
 
