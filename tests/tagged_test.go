@@ -125,7 +125,7 @@ func TestTagged_IsolatedFromUntagged(t *testing.T) {
 	c.Tags("users").Put(ctx, "k", "tagged", time.Hour) //nolint
 
 	var plain, tagged string
-	c.Get(ctx, "k", &plain)                 //nolint
+	c.Get(ctx, "k", &plain)                //nolint
 	c.Tags("users").Get(ctx, "k", &tagged) //nolint
 	eq(t, "untagged", plain)
 	eq(t, "tagged", tagged)

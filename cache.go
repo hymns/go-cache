@@ -260,4 +260,3 @@ func (c *Cache) GetInt(ctx context.Context, key string, def int64) int64 {
 
 // Store returns the underlying Store for driver-specific operations.
 func (c *Cache) Store() Store { return c.store }
-

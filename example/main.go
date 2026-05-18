@@ -39,8 +39,8 @@ func main() {
 	userCache.Flush(ctx)
 
 	fmt.Println("after flush users:")
-	fmt.Println("  user:1 exists?", userCache.Has(ctx, "1"))        // false
-	fmt.Println("  user:2 exists?", userCache.Has(ctx, "2"))        // false
+	fmt.Println("  user:1 exists?", userCache.Has(ctx, "1"))          // false
+	fmt.Println("  user:2 exists?", userCache.Has(ctx, "2"))          // false
 	fmt.Println("  posts:title exists?", postCache.Has(ctx, "title")) // true
 
 	// "mixed" requires BOTH tags to be valid — user tag was rotated, so miss
@@ -88,5 +88,5 @@ func main() {
 	wg.Wait()
 
 	fmt.Printf("50 concurrent goroutines, fn called %d time(s)\n", callCount) // 1
-	fmt.Println("all got same result:", results[0] == results[49])             // true
+	fmt.Println("all got same result:", results[0] == results[49])            // true
 }

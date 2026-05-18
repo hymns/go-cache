@@ -35,7 +35,10 @@ func TestCache_PutGet_String(t *testing.T) {
 }
 
 func TestCache_PutGet_Struct(t *testing.T) {
-	type User struct{ ID int; Name string }
+	type User struct {
+		ID   int
+		Name string
+	}
 	c := newCache(t)
 	ctx := context.Background()
 
